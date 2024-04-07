@@ -1,0 +1,37 @@
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid gray;
+    border-radius: 8px;
+}
+
+.input-area {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+.send-input {
+    margin-right: 5px;
+    padding: 8px 10px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 780px) {
+    .input-area {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .send-input {
+        padding: 6px 8px;
+    }
+}
