@@ -72,6 +72,10 @@
     gap: 10px;
 }
 
+.account-info img {
+    width: 30px;
+}
+
 .logout {
     display: flex;
     justify-content: center;
