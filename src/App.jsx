@@ -40,9 +40,10 @@ const App = () => {
   return (
     <div className='app'>
       <Routes>
-        <Route path='/login' element={!isAuth ? <Login /> : <Navigate to='/' />} />
+        {/* <Route path='/login' element={!isAuth ? <Login /> : <Navigate to='/' />} />
         <Route path='/register' element={!isAuth ? <Register /> : <Navigate to='/' />} />
-        <Route path='/' element={isAuth ? <Home /> : <Navigate to="/login" />} />
+        <Route path='/' element={isAuth ? <Home /> : <Navigate to="/login" />} /> */}
+        <Route path='/' element={<Home />} />
       </Routes>
     </div>
   );
