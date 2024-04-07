@@ -75,7 +75,7 @@ const ContextProvider = (props) => {
                 delayPara(i, nextWord + " ");
             }
             try {
-                const res = await axios.post(`http://localhost:8000/api/chat/create`, { content: input });
+                const res = await axios.post(`https://chatily-ai-backend.onrender.com/api/chat/create`, { content: input });
                 setInput('');
                 setLoading(false);
             } catch (err) {
