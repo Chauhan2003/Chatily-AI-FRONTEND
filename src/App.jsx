@@ -11,7 +11,6 @@ axios.defaults.withCredentials = true;
 
 const App = () => {
   const { isAuth, setIsAuth, setUser } = useContext(Context);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkUserValid = async () => {
@@ -21,21 +20,10 @@ const App = () => {
         setIsAuth(true);
       } catch (err) {
         setIsAuth(false);
-      } finally {
-        setLoading(false);
       }
     };
     checkUserValid();
-  }, [setIsAuth, setUser]);
-
-  if (loading) {
-    return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <div style={{ fontSize: '30px' }}>Loading...</div>
-      </div>
-    );
-  }
-
+  }, []);
 
   return (
     <div className='app'>
